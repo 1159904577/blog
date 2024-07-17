@@ -1,0 +1,21 @@
+version: "1"
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment: # 指定用户root的密码
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=xtwl
+    volumes:
+        # 映射mysql文件
+      - ./mysql-init:/docker-entrypoint-initdb.d
+  autogen:
+    image: blog:latest
+    build: . # 表示以当前目录下的Dockerfile开始构建镜像
+    ports:
+      - 8080:8080
+    volumes:
+      - ./blog:/home/ubuntu/blog
+    depends_on: # 依赖与mysql
+      - mysql
