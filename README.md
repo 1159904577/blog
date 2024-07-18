@@ -8,6 +8,7 @@ Spring Boot 博客系统代码题
 ## 目录
 
 - [实现要求](#实现要求)
+- [git](#git)
 - [文件目录说明](#文件目录说明)
 - [实现思路](#实现思路)
   - [1、Token机制](#1、Token机制)
@@ -27,10 +28,17 @@ Spring Boot 博客系统代码题
 5. 使用 Docker 部署你的应用，并附上部署说明
 6. 无前端需求
 
+### git
+新建blog文件夹，在该文件夹中git 
+pull 仓库地址
+```sh
+git pull 仓库地址
+```
+
 ### 文件目录说明
 
 ```
-com.xtwl    寻涂未来
+com.xtwl    寻途未来
 ├── config
 │  ├── WebMvcConfiguration    配置类，注册拦截器，配置swagger...
 ├── controller
