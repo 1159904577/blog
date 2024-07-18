@@ -32,7 +32,7 @@ Spring Boot 博客系统代码题
 新建blog文件夹，在该文件夹中git 
 pull 仓库地址
 ```sh
-git pull 仓库地址
+git pull https://github.com/1159904577/blog.git
 ```
 
 ### 文件目录说明
