@@ -10,7 +10,7 @@ services:
     volumes:
         # 映射mysql文件
       - ./mysql-init:/docker-entrypoint-initdb.d
-  autogen:
+  blog:
     image: blog:latest
     build: . # 表示以当前目录下的Dockerfile开始构建镜像
     ports:
